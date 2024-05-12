@@ -17,7 +17,7 @@ const Hero = async () => {
     return (
         <section className='sm:p-16 xs:p-8 px-6 py-16 md:py-12 lg:py-4  relative z-10
    w-full  height md:flex items-center justify-center flex-col'>
-            <div className='flex flex-col lg:flex-row justify-between items-center w-[80%] m-auto gap-6'>
+            <div className='flex flex-col lg:flex-row justify-between items-center lg:w-[80%] m-auto gap-6 px-2 lg:px-0'>
                 <div className='w-full md:text-center lg:text-start lg:w-96 flex flex-col gap-5 '>
                     <h1 className='text-4xl sm:text-5xl md:text-6xl font-semibold'>Top fashion for a top price!</h1>
                     <p className='text-gray-500 md:text-center lg:text-start leading-relaxed text-base xl:text-lg'>
