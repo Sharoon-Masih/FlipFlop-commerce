@@ -1,0 +1,22 @@
+export const navbtn:{id:number,name:string,path:string}[]=[
+{
+    id:1,
+    name:"Home",
+    path:"/"
+},
+{
+    id:2,
+    name:"Men",
+    path:"/men"
+},
+{
+    id:3,
+    name:"Women",
+    path:"/women"
+},
+{
+    id:4,
+    name:"Teens",
+    path:"/teen"
+},
+]
