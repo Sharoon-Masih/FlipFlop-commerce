@@ -7,8 +7,8 @@ const Product = ({ products }: { products: SimplifiedProduct[] }) => {
     return (
         <div className='gap-6 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-x-6 gap-y-10 xl:gap-x-8 w-full   p-2 justify-items-center'> {/*to center item in grid use justify-items-center */}
             {products.map((product) =>
-                <div key={product._id} className=' border-b flex flex-col items-center w-full justify-center p-2 relative group gap-3 lg:max-h-80'>
-                    <div className='w-full  relative aspect-square lg:h-64'>
+                <div key={product._id} className=' border-b flex flex-col items-center w-full justify-center p-2 relative group gap-3 lg:max-h-80 '>
+                    <div className='w-full  relative aspect-square lg:h-64 group-hover:opacity-75'>
                         <Image
                             src={product.imgUrl}
                             alt={product.name}
