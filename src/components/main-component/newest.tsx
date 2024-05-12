@@ -27,11 +27,12 @@ const Newest = async () => {
                     <Link href={"/all"}><Button className=' text-base flex items-center justify-between gap-2'>See all <span><ArrowRightIcon /></span></Button></Link>
                 </div>
                 <div className='grid grid-cols-4 justify-center items-center'>
-                    {NewProduct.map((product) => {
+                    {/* {NewProduct[0].name} */}
+                    {/* {NewProduct.map((product) => {
                         <div key={product._id} className='w-[200px] h-[300px] rounded-md border-b flex flex-col items-center bg-gray-400 justify-center p-2'>
                             {product.name}
                         </div>
-                    })}
+                    })} */}
                 </div>
             </div>
         </section>
