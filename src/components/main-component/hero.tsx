@@ -48,7 +48,7 @@ const Hero = async () => {
             <div className='grid grid-cols-3 h-12 w-64  items-center rounded-lg divide-x border '>
             <Link href={"/Men"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Men</span></div></Link>
             <Link href={"/Women"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Women</span></div></Link>
-            <Link href={"/Teens"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Teens</span></div></Link>
+            <Link href={"/Teen"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Teens</span></div></Link>
             </div>
             </div>
         </section>
