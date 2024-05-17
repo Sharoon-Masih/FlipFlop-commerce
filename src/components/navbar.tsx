@@ -31,7 +31,7 @@ const Navbar = () => {
                             </SignInButton>
                         </SignedOut>
                         <SignedIn>
-                            <div className='flex justify-center items-center gap-2 font-medium antialiased truncate '>
+                            <div className='flex justify-center items-center gap-2 font-medium antialiased truncate h-full '>
                             {userStatus.isLoaded && userStatus.isSignedIn && <div className='hidden lg:block'><span >Hey</span> {userStatus.user.firstName}!</div>}
                             <UserButton />
                             </div>  
