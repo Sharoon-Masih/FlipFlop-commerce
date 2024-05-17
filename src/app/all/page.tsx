@@ -2,11 +2,12 @@ import { SimplifiedProduct } from '@/lib/interfaces'
 import React from 'react'
 import { client } from '../../../sanity/lib/client'
 import Product from '@/components/newProduct'
-import Link from 'next/link'
-import { ArrowRightIcon } from 'lucide-react'
-import { revalidatePath } from 'next/cache'
+// import { revalidatePath } from 'next/cache'
 
-revalidatePath("/all","page")
+// revalidatePath("/all","page")
+
+export const dynamic="force-dynamic"
+
 
 const SingleCategory = async () => {
     const query: string = `*[ _type == 'product']{ 

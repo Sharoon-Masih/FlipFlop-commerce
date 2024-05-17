@@ -2,9 +2,10 @@ import { SimplifiedProduct } from '@/lib/interfaces'
 import React from 'react'
 import { client } from '../../../sanity/lib/client'
 import Product from '@/components/newProduct'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { ArrowRightIcon } from 'lucide-react'
+
+// import { revalidatePath } from 'next/cache'
+
+export const dynamic="force-dynamic"
 
 const SingleCategory = async ({ params }: { params: { category: string } }) => {
     const query: string = `*[ _type == 'product' && category -> name == '${params.category}' ]{ 

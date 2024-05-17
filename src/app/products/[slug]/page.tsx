@@ -2,15 +2,18 @@ import { SimplifiedProduct } from '@/lib/interfaces'
 import React from 'react'
 import { client } from '../../../../sanity/lib/client'
 import Imagegallery from '@/components/Imagegallery'
-import { Button } from '@/components/ui/button'
-import { StarIcon, TruckIcon } from 'lucide-react'
+import { } from '@/components/ui/button'
+import {  TruckIcon } from 'lucide-react'
 import RatingBtn from '@/components/ratingBtn'
 import AddToBag from '@/components/addToBag'
 import { urlForImage } from '../../../../sanity/lib/image'
 import CheckoutNow from '@/components/checkoutNow'
-import { revalidatePath } from 'next/cache'
+// import { revalidatePath } from 'next/cache'
 
-revalidatePath("/products/[slug]","page")
+// revalidatePath("/products/[slug]","page")
+
+export const dynamic="force-dynamic"
+
 
 const SingleProduct = async ({ params }: { params: { slug: string } }) => {
     //here we are doing a query for sepcific slug which we are getting in params.
