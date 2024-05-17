@@ -7,16 +7,16 @@ export const navbtn:{id:number,name:string,path:string}[]=[
 {
     id:2,
     name:"Men",
-    path:"/men"
+    path:"/Men"
 },
 {
     id:3,
     name:"Women",
-    path:"/women"
+    path:"/Women"
 },
 {
     id:4,
     name:"Teens",
-    path:"/teen"
+    path:"/Teen"
 },
 ]

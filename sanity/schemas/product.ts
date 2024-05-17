@@ -26,14 +26,21 @@ export default {
         },
         {
             name: "description",
-            type: "array", //normally for descript box we can use "text" type also but we want a box with some feature so for that we have to set type as "array of Block" 
+            // type: "array", //normally for descript box we can use "text" type also but we want a box with some feature so for that we have to set type as "array of Block" 
+            type: "text",
             title: "Product Description",
-            of: [{ type: "block" }] //here we defining a type which is "block"
+            // of: [{ type: "block" }] //here we defining a type which is "block"
         },
         {
             name: "price",
             type: "number",
             title: "Product Price",
+        },
+        {
+            name: "price_id",
+            type:"string",
+            title:"Stripe payment_id"
+
         },
         { //we made this field to link "category" contents with "Product", its benefit is that when we create Product document so at there you we can select the category of that product without moving to any other content  
             name: "category",
@@ -41,6 +48,14 @@ export default {
             title: "Categories",
             to: [{ //In this property we define that to which "content" we want to referenced this type, like here we set "category" so its mean that link this field with "category" schema.
                 type: "category"
+            }]
+        },
+        { //i made this schema for tracking the sale status and name of sales like: summerSale, winter sale etc..
+            name: "sale",
+            type: "reference",
+            title: "Sale Name",
+            to: [{
+                type: "saleStatus" //i refrenced this with the saleStatus schema.
             }]
         }
     ]

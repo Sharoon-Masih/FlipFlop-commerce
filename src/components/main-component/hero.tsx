@@ -17,7 +17,7 @@ const Hero = async () => {
     return (
         <section className='sm:p-16 xs:p-8 px-6 py-16 md:py-12 lg:py-4  relative z-10
    w-full  height md:flex items-center justify-center flex-col'>
-            <div className='flex flex-col lg:flex-row justify-between items-center lg:w-[80%] m-auto gap-6 px-2 lg:px-0'>
+            <div className='flex flex-col lg:flex-row justify-between items-center lg:w-[80%] 2xl:max-w-[1280px]  m-auto gap-6 px-2 lg:px-0'>
                 <div className='w-full md:text-center lg:text-start lg:w-96 flex flex-col gap-5 '>
                     <h1 className='text-4xl sm:text-5xl md:text-6xl font-semibold'>Top fashion for a top price!</h1>
                     <p className='text-gray-500 md:text-center lg:text-start leading-relaxed text-base xl:text-lg'>
@@ -44,11 +44,11 @@ const Hero = async () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:pb-12 w-[80%] flex items-center justify-center lg:justify-start m-auto  '>
+            <div className='lg:pb-12 lg:w-[80%] 2xl:max-w-[1280px]  flex items-center justify-center lg:justify-start m-auto  '>
             <div className='grid grid-cols-3 h-12 w-64  items-center rounded-lg divide-x border '>
-            <Link href={"/men"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Men</span></div></Link>
-            <Link href={"/women"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Women</span></div></Link>
-            <Link href={"/teens"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Teens</span></div></Link>
+            <Link href={"/Men"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Men</span></div></Link>
+            <Link href={"/Women"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Women</span></div></Link>
+            <Link href={"/Teens"}><div className='flex justify-center items-center p-2 hover:bg-gray-100 overflow-hidden m-1 active:text-gray-200 rounded transition duration-100 '><span className='truncate'>Teens</span></div></Link>
             </div>
             </div>
         </section>
