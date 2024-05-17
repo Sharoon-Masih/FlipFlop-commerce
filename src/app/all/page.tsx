@@ -4,6 +4,9 @@ import { client } from '../../../sanity/lib/client'
 import Product from '@/components/newProduct'
 import Link from 'next/link'
 import { ArrowRightIcon } from 'lucide-react'
+import { revalidatePath } from 'next/cache'
+
+revalidatePath("/all","page")
 
 const SingleCategory = async () => {
     const query: string = `*[ _type == 'product']{ 

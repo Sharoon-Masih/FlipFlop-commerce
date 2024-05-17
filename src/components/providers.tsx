@@ -10,8 +10,8 @@ const Providers = ({children}:{children:ReactNode}) => { //must wrap all the tag
      stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
      mode='payment'
      billingAddressCollection={true}
-     successUrl='http://localhost:3000/stripe/addedsuccessfully' //yeh wo URL hai jaha jasa hi sale successful hogi automatically redirect hojayega.
-     cancelUrl='http://localhost:3000/stripe/error'
+     successUrl='https://flipflop-two.vercel.app/stripe/addedsuccessfully' //yeh wo URL hai jaha jasa hi sale successful hogi automatically redirect hojayega.
+     cancelUrl='https://flipflop-two.vercel.app/stripe/error'
      shouldPersist={true}
      language='en-US'
 

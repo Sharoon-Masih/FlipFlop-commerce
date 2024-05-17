@@ -8,6 +8,9 @@ import RatingBtn from '@/components/ratingBtn'
 import AddToBag from '@/components/addToBag'
 import { urlForImage } from '../../../../sanity/lib/image'
 import CheckoutNow from '@/components/checkoutNow'
+import { revalidatePath } from 'next/cache'
+
+revalidatePath("/products/[slug]","page")
 
 const SingleProduct = async ({ params }: { params: { slug: string } }) => {
     //here we are doing a query for sepcific slug which we are getting in params.

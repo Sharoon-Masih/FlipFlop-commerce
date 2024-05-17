@@ -5,6 +5,9 @@ import Product from '@/components/newProduct'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRightIcon } from 'lucide-react'
+import { revalidatePath } from 'next/cache'
+
+revalidatePath("/[category]","page")
 
 const SingleCategory = async ({ params }: { params: { category: string } }) => {
     const query: string = `*[ _type == 'product' && category -> name == '${params.category}' ]{ 
