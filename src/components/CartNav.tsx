@@ -38,7 +38,7 @@ export function Cart({ side }: { side: "top" | "right" }) {
     <Sheet open={shouldDisplayCart} onOpenChange={() => { handleCartClick() }}>
       <SheetOverlay>
 
-        <SheetContent side={side} className={clsx("h-screen w-screen md:max-w-lg ",
+        <SheetContent side={side} className={clsx("h-[90vh] md:h-screen w-screen md:max-w-lg ",
           {
             "block md:hidden": side === "top",
             "hidden md:block": side === "right"
