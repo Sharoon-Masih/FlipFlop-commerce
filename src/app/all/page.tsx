@@ -6,7 +6,7 @@ import Product from '@/components/newProduct'
 
 // revalidatePath("/all","page")
 
-export const dynamic="force-dynamic"
+// export const dynamic="force-dynamic"
 
 
 const AllProducts = async () => {
