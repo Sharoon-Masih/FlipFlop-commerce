@@ -9,7 +9,7 @@ import Product from '@/components/newProduct'
 export const dynamic="force-dynamic"
 
 
-const SingleCategory = async () => {
+const AllProducts = async () => {
     const query: string = `*[ _type == 'product']{ 
         _id,
         name,
@@ -35,4 +35,4 @@ const SingleCategory = async () => {
     )
 }
 
-export default SingleCategory
+export default AllProducts 
