@@ -1,6 +1,6 @@
 import { SimplifiedProduct } from '@/lib/interfaces'
 import React from 'react'
-import { client } from '../../../sanity/lib/client'
+import { client, sanityFetch } from '../../../sanity/lib/client'
 import Product from '@/components/newProduct'
 
 // import { revalidatePath } from 'next/cache'
@@ -19,7 +19,7 @@ const SingleCategory = async ({ params }: { params: { category: string } }) => {
         "sale":sale -> name,
         "saleStatus":sale -> status,
     }`
-    const categoryPdt: SimplifiedProduct[] = await client.fetch(query)
+    const categoryPdt: SimplifiedProduct[] = await sanityFetch({query:query,tags:["product"]})
     return (
         <section className='sm:p-16 xs:p-8 px-6 py-12 lg:py-10  relative z-10
         w-full  height'>
