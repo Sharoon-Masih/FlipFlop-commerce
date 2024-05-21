@@ -1,6 +1,6 @@
 import { SimplifiedProduct } from '@/lib/interfaces'
 import React from 'react'
-import { client } from '../../../../sanity/lib/client'
+import { client, sanityFetch } from '../../../../sanity/lib/client'
 import Imagegallery from '@/components/Imagegallery'
 import { } from '@/components/ui/button'
 import {  TruckIcon } from 'lucide-react'
@@ -30,7 +30,7 @@ const SingleProduct = async ({ params }: { params: { slug: string } }) => {
         "category": category -> name,
          price_id
     }`
-    const data: SimplifiedProduct[] = await client.fetch(query)
+    const data: SimplifiedProduct[] = await sanityFetch({query:query,tags:["product"]})
     console.log(data);
     const [obj] = data
     const { images, sale, saleStatus, slug } = obj
