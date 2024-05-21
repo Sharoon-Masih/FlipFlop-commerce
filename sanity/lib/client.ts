@@ -11,8 +11,8 @@ export const client = createClient({
 })
 
 
-export async function sanityFetch<QueryResponse>({
-  query,
+export async function sanityFetch<QueryResponse>({  //acha basically yaha par humna yeh function iss lia bnaya hai takay manually client.fetch() kay func ma jakay iss tarah say sari cheezain add na krni paray toh iss lia simply jo client.fetch() ka method hai wo humna within sanityFetch() func ma use kia hai taka direct sanityFetch() ko call krein or usme required parameter pass krdein.
+  query, 
   qParams,
   tags,
 }: {

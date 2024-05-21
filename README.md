@@ -249,4 +249,7 @@ async function getData() {  //here i simply create function in which i'm fetchin
 * Step2: import repository on vercel
 * Step3: must add environment variables to vercel which are stored in your .env file.
 * Step4: Click Deploy
+
+## For revalidating pages dynamically on demand with sanity
+[Check this link](https://www.sanity.io/guides/sanity-webhooks-and-on-demand-revalidation-in-nextjs#ceb1245de639)
  
