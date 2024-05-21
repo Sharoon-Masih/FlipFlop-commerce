@@ -1,5 +1,5 @@
 import React from 'react'
-import { client } from '../../../sanity/lib/client'
+import { client, sanityFetch } from '../../../sanity/lib/client'
 import { SimplifiedProduct } from '@/lib/interfaces'
 import Link from 'next/link'
 import { Button } from '../ui/button'
@@ -17,7 +17,7 @@ const Newest = async () => {
         "category": category -> name,
         "imgUrl" : images[0].asset -> url
         }`
-    const NewProduct: SimplifiedProduct[] = await client.fetch(query)
+    const NewProduct: SimplifiedProduct[] = await sanityFetch({query:query,tags:["product"]})
     // console.log(NewProduct);
     return (
         <section className='sm:p-16 xs:p-8 px-6 py-12 lg:py-4  relative z-10
