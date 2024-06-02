@@ -253,3 +253,21 @@ async function getData() {  //here i simply create function in which i'm fetchin
 ## For revalidating pages dynamically on demand with sanity
 [Check this link](https://www.sanity.io/guides/sanity-webhooks-and-on-demand-revalidation-in-nextjs#ceb1245de639)
  
+## what is Content Lake ?
+
+* All the content we upload on Sanity is stored on Cloud.
+* This Cloud is known as Content Lake.
+* Via Sanity studio we send our data to Content Lake and also fetch data from Content Lake on Frontend using client.fetch() method.
+
+## What is Datasets?
+* Datasets is simply a collection of Documents.
+* JSON Documents can be of different types like string,array,text,etc.
+* We review these raw JSON object by clicking on inspect in three dots(...) at the top right corner in Sanity studio.
+* we can think of dataset as a database where our all content is stored
+
+* Remember the schema we create are only the part of our sanity studio,they are seprate from data.Data is always stored in a cloud or in our case it is a content lake.
+
+* Remember if you have deployed your sanity project to production and also using it on localhost as well so if you make changes in anyone of them those changes will automatically reflect on both environment.
+
+What is Headless CMS?
+* https://youtu.be/-Uor3I0n_vQ
